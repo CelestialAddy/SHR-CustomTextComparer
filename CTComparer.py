@@ -69,7 +69,7 @@ if len(COMMAND_LINE_ARGS) == CLA_MAX:
 
 # Asks if on
 
-print(f"CustomText Comparer (revision {PROG_VER}) by CelestialAddy)\n" + "=" * 100)
+print(f"CustomText Comparer (revision {PROG_VER}) by CelestialAddy\n" + "=" * 100)
 
 if not SKIP_ASKS_ON:
     try:
@@ -78,7 +78,7 @@ if not SKIP_ASKS_ON:
         T1_TYPE = TEMP_ASK.split(";")[1].strip()
         T1_DUMP = Dumper.Dump(Path=T1_PATH, Codec=T1_TYPE)
         T1_BACK = T1_DUMP.copy()
-        TEMP_ASK = input("1st INI (path; encoding)? ")
+        TEMP_ASK = input("2nd INI (path; encoding)? ")
         T2_PATH = TEMP_ASK.split(";")[0].strip()
         T2_TYPE = TEMP_ASK.split(";")[1].strip()
         T2_DUMP = Dumper.Dump(Path=T2_PATH, Codec=T2_TYPE)
